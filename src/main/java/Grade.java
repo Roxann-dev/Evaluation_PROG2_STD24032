@@ -13,10 +13,9 @@ public class Grade {
     private Exam exam;
     private List<GradeChange> history = new ArrayList<GradeChange>();
 
-    public Grade(Student jean, Exam examFinal) {
+    public Grade(Student student, Exam exam) {
         this.student = student;
         this.exam = exam;
-        this.history = history;
     }
 
     public void addChange(double value, Instant timestamp, String reason){
